@@ -31,6 +31,8 @@
 | [Agent 探索经验](docs/research/agent-exploration.md) | 既有探索介绍与实践表达 |
 | [AI 落地生态](AI落地生态.md) | GitHub 原有生态资料，具体状态需逐项核验 |
 
+检索以 `content/terms/*.md` 为唯一正文源，构建生成静态数据后由浏览器做关键词查询。修改条目需重新构建和发布；具体流程见 [检索页面说明](docs/term-search.md)。当前保留 `/terms/` 路径，根地址自动进入该页。
+
 ## GitHub 与维护
 
 已关联现有公开仓库 [lixudong1649/jdp-wiki](https://github.com/lixudong1649/jdp-wiki)，本地与远端名称统一为 jdp-wiki，原仓库名为 jdpWiki。原有内容与提交历史保留。
