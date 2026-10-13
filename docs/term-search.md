@@ -18,11 +18,12 @@
 | scripts/build_terms.py | 只读上述目录，校验 ID、必填定义与来源，生成检索数据 |
 | site/terms.js | 生成产物，不手改 |
 | site/search.js | 检索与排序 |
+| site/entry.html | 发布为 Pages 根目录 index.html，进入 terms/；并非本地检索入口 |
 | site/app.js、index.html、styles.css | 页面交互与响应式展示 |
 
 新增或更新条目后运行 `python3 scripts/build_terms.py`；校验同步运行 `python3 scripts/build_terms.py --check`。未知状态不纳入索引；原始导入、私有文件及会话目录不参与构建。
 
-需本地服务时，项目根目录执行 `python3 -m http.server 8080 --directory site --bind 127.0.0.1`。网页使用相对资源路径，可部署在 Pages 的 `/terms/`，不覆盖原首页。
+需本地服务时，项目根目录执行 `python3 -m http.server 8080 --directory site --bind 127.0.0.1`。网页使用相对资源路径，可部署在 Pages 的 `/terms/`，并在发布根目录增加入口 index.html，跳转至 /terms/。
 
 ## 边界与验收
 
