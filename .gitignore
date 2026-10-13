@@ -1,0 +1,26 @@
+# Local editor and LLM Wiki state
+.DS_Store
+.obsidian/
+.llm-wiki/
+# Raw imports require explicit review before publication
+raw/
+# Credentials and local runtime artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+__pycache__/
+.venv/
+# Local credentials, sessions and runtime files
+credentials*.json
+secrets*.json
+*.p12
+*.pfx
+*.log
+*.db
+*.sqlite
+*.sqlite3
+.codex/
+.claude/
