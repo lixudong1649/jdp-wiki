@@ -24,3 +24,9 @@ secrets*.json
 *.sqlite3
 .codex/
 .claude/
+# VitePress 生成产物（由 scripts/gen_site.mjs 与 vitepress build 生成）
+web/terms/
+web/.vitepress/sidebar.json
+web/.vitepress/stats.json
+web/.vitepress/cache/
+web/.vitepress/dist/

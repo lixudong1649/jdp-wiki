@@ -31,6 +31,20 @@
 | [Agent 探索经验](docs/research/agent-exploration.md) | 既有探索介绍与实践表达 |
 | [AI 落地生态](AI落地生态.md) | GitHub 原有生态资料，具体状态需逐项核验 |
 
+## 网站（VitePress）
+
+在线：https://lixudong1649.github.io/jdp-wiki/ 。基于 [VitePress](https://vitepress.dev/)：首页、分类侧边栏、每个术语独立页面、本页目录、深色模式、移动端适配，以及支持中文的本地全文搜索（按 `/` 或 Ctrl+K）。
+
+```bash
+npm ci          # 安装依赖
+npm run dev     # 本地预览 http://localhost:5173/jdp-wiki/
+npm run build   # 生成 web/.vitepress/dist
+```
+
+推送 `main` 后 GitHub Actions（`.github/workflows/pages.yml`）自动构建并发布到 Pages，无需手动同步 gh-pages。只发布 `content/terms/` 中 `status: 已核验` 的条目；raw/、wiki/、tools/ 等不进入网站。详见 [检索页面说明](docs/term-search.md)。
+
+旧版检索（site/ + scripts/build_terms.py）原样保留作参考，不再发布。
+
 检索以 `content/terms/*.md` 为唯一正文源，构建生成静态数据后由浏览器做关键词查询。修改条目需重新构建和发布；具体流程见 [检索页面说明](docs/term-search.md)。当前保留 `/terms/` 路径，根地址自动进入该页。
 
 ## GitHub 与维护

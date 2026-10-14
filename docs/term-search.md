@@ -54,3 +54,15 @@ flowchart LR
 ## Pages 发布说明
 
 本项目发布分支根目录保留空标记文件 `.nojekyll`，让 Pages 跳过 Jekyll 构建并直接服务已生成的静态文件。它不关闭网站、不自动生成首页；根目录仍需 `index.html`。当前按用户确认保留 `/terms/`：检索文件发布到 `terms/`，根入口跳转至此。该子路径是项目组织选择，不是 Pages 强制要求。见 [GitHub 官方建站说明](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
+
+## 2026-10-14 改版：VitePress
+
+网站改用 VitePress（静态、低维护、Vue 生态的成熟文档框架），由 `scripts/gen_site.mjs` 把 `content/terms/*.md` 生成为 `web/terms/` 下的独立页面、分类索引与侧边栏（生成产物不入库）。
+
+- 展示：首页、按分类折叠的侧边栏、术语卡片索引、每条独立 URL、本页目录、上一篇/下一篇、深色模式、移动端。
+- 检索：VitePress 内置本地搜索（MiniSearch），自定义分词：中文连续文本切为单字 + 双字，英文按词；索引与查询共用同一分词，多词全部命中（AND）、支持前缀。仍无语义检索与纠错。
+- 兼容：旧链接 `/terms/#<id>` 自动跳到 `/terms/<id>`。
+- 发布：推送 main 触发 `.github/workflows/pages.yml` 自动构建部署，Pages 来源改为 GitHub Actions；`gh-pages` 分支不再更新，保留作历史。
+- 选型对比：Docusaurus 偏重（React、配置多）；MkDocs Material 需 Python 环境且中文需 jieba 插件；Starlight 默认 Pagefind 对中文分词有限；Quartz 偏 Obsidian 笔记花园。VitePress 依赖最少、构建最快（约 3 秒），搜索分词可定制。
+
+本地：`npm ci && npm run dev`；构建：`npm run build`，产物在 `web/.vitepress/dist`。上文“内容与构建”一节描述的是旧版 site/，旧文件保留不再发布。
