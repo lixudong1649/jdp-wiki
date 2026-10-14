@@ -4,6 +4,8 @@
 
 更新：2026-10-13。已落地 88 个独立通用术语条目与静态检索；编辑、审核与版本管理后台仍在规划中。
 
+作者：Xudong Li（[lixudong1649](https://github.com/lixudong1649)） · 网站：[lixudong1649.github.io/jdp-wiki](https://lixudong1649.github.io/jdp-wiki/) · 反馈：[GitHub Issues](https://github.com/lixudong1649/jdp-wiki/issues) · 许可：代码 MIT，条目正文待定（见 [许可与声明](#许可与声明)）
+
 ## 职责与边界
 
 - 统一维护各项目可公开、可复用的通用概念、缩写和术语；项目文档引用条目，避免重复维护定义。
@@ -64,3 +66,14 @@ npm run build   # 生成 web/.vitepress/dist
 - Copyright (c) 2026 lixudong1649，仅限本仓新增原创贡献；既有作品及第三方部分版权归各自权利人，原有版权头与许可优先保留。
 
 本项目以学习、实践与解决真实问题为目标，支持开源与知识分享，尊重隐私、创造者权益及不同文化，倡导诚实、负责的协作。项目能力与维护承诺以实际文档和验证结果为准。此声明不代替许可证，也不自动授予第三方作品权利。
+
+## 许可与声明
+
+© 2026 [Xudong Li](https://github.com/lixudong1649)
+
+| 范围 | 许可 |
+|---|---|
+| 代码：`scripts/`、`site/`、`web/.vitepress/`、`.github/` | [MIT](LICENSE) |
+| 条目正文：`content/terms/` 等文字内容 | 尚未确定，见上文“授权”说明 |
+
+开发者联系：[GitHub 主页](https://github.com/lixudong1649)。与所提及产品、组织无隶属关系，相关商标归各自所有者所有；第三方依赖（VitePress 等）遵循各自许可。网站内完整声明见 [关于](https://lixudong1649.github.io/jdp-wiki/about)。

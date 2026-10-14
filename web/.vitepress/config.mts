@@ -29,8 +29,9 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '术语索引', link: '/terms/' },
-      { text: 'GitHub', link: 'https://github.com/lixudong1649/jdp-wiki' }
+      { text: '关于', link: '/about' }
     ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/lixudong1649', ariaLabel: '作者 GitHub 主页' }],
     sidebar: { '/terms/': [{ text: '术语索引', link: '/terms/' }, ...sidebar] },
     outline: { level: [2, 3], label: '本页目录' },
     docFooter: { prev: '上一篇', next: '下一篇' },
@@ -39,7 +40,10 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色',
     sidebarMenuLabel: '目录',
     returnToTopLabel: '回到顶部',
-    footer: { message: '内容须注明来源；授权待定，未经许可不默认允许再分发。', copyright: '© 2026 lixudong1649' },
+    footer: {
+      message: '代码采用 <a href="https://github.com/lixudong1649/jdp-wiki/blob/main/LICENSE">MIT</a> 许可；条目正文授权待定，未经许可不默认允许再分发。<a href="/jdp-wiki/about">关于与声明</a>',
+      copyright: 'Copyright © 2026 <a href="https://github.com/lixudong1649">Xudong Li</a> · <a href="https://github.com/lixudong1649/jdp-wiki">项目仓库</a>'
+    },
     search: {
       provider: 'local',
       options: {

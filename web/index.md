@@ -9,6 +9,9 @@ hero:
       text: 浏览术语
       link: /terms/
     - theme: alt
+      text: 关于与声明
+      link: /about
+    - theme: alt
       text: GitHub
       link: https://github.com/lixudong1649/jdp-wiki
 features:
