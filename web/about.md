@@ -20,7 +20,7 @@ jdp-wiki 是以可查证的知识条目为核心的通用术语知识库，每�
 | 范围 | 许可 |
 |---|---|
 | 代码：`scripts/`、`site/`、`web/.vitepress/`、`.github/` | [MIT](https://github.com/lixudong1649/jdp-wiki/blob/main/LICENSE) |
-| 条目正文：`content/terms/` 等文字内容 | 尚未确定；未经许可不默认允许复制、改编或再分发 |
+| 条目正文：`content/terms/` 等文字内容 | [CC BY 4.0](https://github.com/lixudong1649/jdp-wiki/blob/main/LICENSE-CONTENT.md)：可分享、改编和商用，需署名并附原文与许可链接 |
 
 条目引用的官方文档、规范与论文版权归各自权利人；本站与所提及的产品、组织无隶属关系，相关商标归各自所有者所有。第三方依赖（VitePress 等）遵循各自许可。内容可能有误，欢迎反馈。
 

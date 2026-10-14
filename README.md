@@ -4,7 +4,7 @@
 
 更新：2026-10-13。已落地 88 个独立通用术语条目与静态检索；编辑、审核与版本管理后台仍在规划中。
 
-作者：Xudong Li（[lixudong1649](https://github.com/lixudong1649)） · 网站：[lixudong1649.github.io/jdp-wiki](https://lixudong1649.github.io/jdp-wiki/) · 反馈：[GitHub Issues](https://github.com/lixudong1649/jdp-wiki/issues) · 许可：代码 MIT，条目正文待定（见 [许可与声明](#许可与声明)）
+作者：Xudong Li（[lixudong1649](https://github.com/lixudong1649)） · 网站：[lixudong1649.github.io/jdp-wiki](https://lixudong1649.github.io/jdp-wiki/) · 反馈：[GitHub Issues](https://github.com/lixudong1649/jdp-wiki/issues) · 许可：代码 MIT，条目正文 CC BY 4.0（见 [许可与声明](#许可与声明)）
 
 ## 职责与边界
 
@@ -55,14 +55,14 @@ npm run build   # 生成 web/.vitepress/dist
 
 仓库遵循 `jdp-` 前缀、小写英文及中划线分词；这是本生态约定，不是 GitHub 强制规则。改名后 Pages 入口为 https://lixudong1649.github.io/jdp-wiki/ ，旧 Pages 地址不自动重定向；术语检索入口为 [terms/](https://lixudong1649.github.io/jdp-wiki/terms/)，其余百科维护功能仍在规划。
 
-每项实验记录目的、依赖、运行方式、结果与限制；区分计划、已有文件与经过验证的能力。发布前筛选、脱敏并核对授权，禁止提交密钥、私人数据和无必要临时产物。软件许可、内容许可及公开范围待确定；公开仓库不等于已获开源或内容再利用许可。
+每项实验记录目的、依赖、运行方式、结果与限制；区分计划、已有文件与经过验证的能力。发布前筛选、脱敏并核对授权，禁止提交密钥、私人数据和无必要临时产物。代码采用 MIT（[LICENSE](LICENSE)），条目正文采用 CC BY 4.0（[LICENSE-CONTENT.md](LICENSE-CONTENT.md)）；第三方内容沿用各自许可。
 
 ## 维护、版权与项目声明
 
 - 维护者：[lixudong1649](https://github.com/lixudong1649)。
 - 项目地址：[项目仓库](https://github.com/lixudong1649/jdp-wiki)
 - 公开状态：公开源码仓库；网站可访问性与源码可见性分别判断。
-- 授权：尚未确定本仓库整体授权；不因网站公开、上游开源或名称带 jdp- 就认定本仓已开源。未经相应权利人授权，不默认允许复制、改编或再分发；第三方许可另行适用。
+- 授权：代码采用 [MIT](LICENSE)；`content/terms/` 条目正文采用 [CC BY 4.0](LICENSE-CONTENT.md)，转载与改编需署名并附原文与许可链接。raw/、wiki/ 等其他资料及第三方内容不在上述授权范围内，沿用各自权利人的声明。
 - Copyright (c) 2026 lixudong1649，仅限本仓新增原创贡献；既有作品及第三方部分版权归各自权利人，原有版权头与许可优先保留。
 
 本项目以学习、实践与解决真实问题为目标，支持开源与知识分享，尊重隐私、创造者权益及不同文化，倡导诚实、负责的协作。项目能力与维护承诺以实际文档和验证结果为准。此声明不代替许可证，也不自动授予第三方作品权利。
@@ -74,6 +74,6 @@ npm run build   # 生成 web/.vitepress/dist
 | 范围 | 许可 |
 |---|---|
 | 代码：`scripts/`、`site/`、`web/.vitepress/`、`.github/` | [MIT](LICENSE) |
-| 条目正文：`content/terms/` 等文字内容 | 尚未确定，见上文“授权”说明 |
+| 条目正文：`content/terms/` 等文字内容 | [CC BY 4.0](LICENSE-CONTENT.md) |
 
 开发者联系：[GitHub 主页](https://github.com/lixudong1649)。与所提及产品、组织无隶属关系，相关商标归各自所有者所有；第三方依赖（VitePress 等）遵循各自许可。网站内完整声明见 [关于](https://lixudong1649.github.io/jdp-wiki/about)。

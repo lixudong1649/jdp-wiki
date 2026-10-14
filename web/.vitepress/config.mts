@@ -41,7 +41,7 @@ export default defineConfig({
     sidebarMenuLabel: '目录',
     returnToTopLabel: '回到顶部',
     footer: {
-      message: '代码采用 <a href="https://github.com/lixudong1649/jdp-wiki/blob/main/LICENSE">MIT</a> 许可；条目正文授权待定，未经许可不默认允许再分发。<a href="/jdp-wiki/about">关于与声明</a>',
+      message: '代码采用 <a href="https://github.com/lixudong1649/jdp-wiki/blob/main/LICENSE">MIT</a> 许可；条目正文采用 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>，转载请署名并附原文链接。<a href="/jdp-wiki/about">关于与声明</a>',
       copyright: 'Copyright © 2026 <a href="https://github.com/lixudong1649">Xudong Li</a> · <a href="https://github.com/lixudong1649/jdp-wiki">项目仓库</a>'
     },
     search: {
